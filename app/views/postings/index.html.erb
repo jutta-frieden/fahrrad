@@ -1,0 +1,17 @@
+<h1>All bikes we have in stock</h1>
+
+<%= link_to 'Add a new bike', new_posting_path %>
+
+<table>
+    <tr>
+        <td>Title</td>
+        <td>Postcode</td>
+    </tr>
+
+    <% @postings.each do |posting| %>
+        <tr>
+            <td><%= posting.title %></td>
+            <td><%= posting.postcode %></td>
+        </tr>
+    <% end %>
+</table>
