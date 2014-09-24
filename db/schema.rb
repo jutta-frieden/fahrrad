@@ -15,9 +15,8 @@ ActiveRecord::Schema.define(version: 20140831184151) do
 
   create_table "postings", force: true do |t|
     t.string   "title"
-    t.text     "text"
+    t.text     "description"
     t.text     "postcode"
-    t.integer  "price"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
