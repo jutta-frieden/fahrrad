@@ -1,0 +1,1 @@
+I stopped at 3.3 Slightly Dynamic Pages in the Rails Tutorial, this is where I want to continue on Sunday.
