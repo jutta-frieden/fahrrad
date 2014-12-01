@@ -2,12 +2,15 @@
 <html>
 <head>
 <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
-  <title>Fahrrad | <%= yield(:title) %></title>
+  <title><%= full_title(yield(:title)) %></title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+<div class="header">
+<img style="width: 40%; margin: 0px; float: right;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJptLyH1A1L__eX2L-TR1A6X4bHW7-oKqWja8ABJLSEP2EYq3B">
+</div>
 
 <%= yield %>
 

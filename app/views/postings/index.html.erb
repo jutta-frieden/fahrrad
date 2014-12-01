@@ -4,8 +4,8 @@
 
 <table>
     <tr>
-        <td>Title</td>
-        <td>Postcode</td>
+        <th>Title</th>
+        <th>Postcode</th>
     </tr>
 
     <% @postings.each do |posting| %>
@@ -13,5 +13,6 @@
             <td><%= posting.title %></td>
             <td><%= posting.postcode %></td>
         </tr>
+        
     <% end %>
 </table>
