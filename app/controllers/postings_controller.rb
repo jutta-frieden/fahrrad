@@ -31,7 +31,7 @@ end
 
 private
   def posting_params
-    params.require(:posting).permit(:title, :postcode)
+    params.require(:posting).permit(:title, :postcode, :description)
   end
 
 
