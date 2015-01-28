@@ -1,18 +1,27 @@
-<h1>All bikes we have in stock</h1>
+<div id="container">
 
-<%= link_to 'Add a new bike', new_posting_path %>
+<h1>All bikes we have in stock</h1>
+<button style="float: right; margin-right: 30px;"><%= link_to 'Add a new bike', new_posting_path %></button>
 
 <table>
     <tr>
         <th>Title</th>
         <th>Postcode</th>
+        <th>Description</th>
+        <th></th>
     </tr>
 
     <% @postings.each do |posting| %>
         <tr>
             <td><%= posting.title %></td>
             <td><%= posting.postcode %></td>
+            <td><%= posting.description %></td>
+            <td><%= link_to 'Show', posting %></td>
         </tr>
         
     <% end %>
 </table>
+
+
+
+</div>      
